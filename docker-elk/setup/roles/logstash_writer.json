@@ -1,0 +1,52 @@
+{
+  "cluster": [
+    "manage_index_templates",
+    "monitor",
+    "manage_ilm",
+    "manage",
+    "all"
+  ],
+  "indices": [
+    {
+      "names": [
+        "logs-generic-default",
+        "logstash-*",
+        "ecs-logstash-*"
+      ],
+      "privileges": [
+        "write",
+        "create",
+        "create_index",
+        "manage",
+        "manage_ilm"
+      ]
+    },
+    {
+      "names": [
+        "logstash",
+        "ecs-logstash"
+      ],
+      "privileges": [
+        "write",
+        "manage"
+      ]
+    },
+    {
+      "names": [
+        "danang",
+        "hcm",
+        "hanoi",
+        "hn",
+        "err-*"
+      ],
+      "privileges": [
+        "write",
+        "delete",
+        "create_index",
+        "create",
+        "read",
+        "all"
+      ]
+    }
+  ]
+}
